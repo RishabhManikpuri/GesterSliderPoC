@@ -1,0 +1,218 @@
+GESTURE NAV SDK — SOURCE AVAILABLE LICENSE
+Version 1.0, 2026
+Copyright (c) 2026 Rishabh Manikpuri. All rights reserved.
+
+════════════════════════════════════════════════════════════
+DEFINITIONS
+════════════════════════════════════════════════════════════
+
+"Software" means the GestureNav SDK, GestureSliderPoC, and all
+associated source code, documentation, assets, and model files
+in this repository.
+
+"Licensor" means the copyright holder identified above.
+
+"You" means the individual or legal entity exercising rights
+under this License.
+
+"Commercial Use" means any use of the Software, in whole or in
+part, intended for or directed toward commercial advantage or
+monetary compensation, including but not limited to:
+  (a) Incorporating the Software into a product or service
+      that is sold, licensed, or monetized;
+  (b) Using the Software to provide services to third parties
+      for compensation (SaaS, PaaS, consulting, etc.);
+  (c) Distributing the Software as part of a commercial SDK,
+      library, or plugin offering.
+
+"Enterprise" means any organization with annual gross revenue
+exceeding USD $100,000 in the prior fiscal year, or any
+subsidiary or affiliate of such an organization, or any entity
+that has received venture capital, private equity, or
+institutional funding exceeding USD $500,000 in aggregate.
+
+"Contribution" means any source code, documentation, test,
+asset, or other material intentionally submitted to the
+Licensor for inclusion in the Software via pull request,
+issue, patch, or other means.
+
+"Contributor" means any individual submitting a Contribution.
+
+════════════════════════════════════════════════════════════
+GRANT OF RIGHTS
+════════════════════════════════════════════════════════════
+
+Subject to the terms of this License, the Licensor hereby
+grants You a worldwide, royalty-free, non-exclusive license to:
+
+1. PERSONAL & EDUCATIONAL USE
+   Use, copy, and run the Software for personal projects,
+   academic research, learning, and non-commercial
+   experimentation without restriction.
+
+2. OPEN SOURCE CONTRIBUTIONS
+   Fork, modify, and submit Contributions back to this
+   repository. Contributions are welcomed and encouraged.
+   Accepted Contributions become part of the Software under
+   this same License.
+
+3. NON-COMMERCIAL DISTRIBUTION
+   Share and distribute the Software or derivative works
+   provided that:
+   (a) This License file is included in full with every copy;
+   (b) All copyright notices are preserved;
+   (c) The distribution is not for Commercial Use;
+   (d) Any modifications are clearly marked as changed from
+       the original.
+
+4. EVALUATION
+   Enterprises may use the Software for internal evaluation
+   and proof-of-concept purposes for a period not exceeding
+   30 days without a commercial license.
+
+════════════════════════════════════════════════════════════
+RESTRICTIONS
+════════════════════════════════════════════════════════════
+
+The following are expressly prohibited without obtaining a
+separate written Commercial License from the Licensor:
+
+5. NO COMMERCIAL USE
+   You may not use the Software for Commercial Use as defined
+   above. This includes embedding the Software in paid apps,
+   SDKs, SaaS products, or enterprise internal tooling that
+   generates business value.
+
+6. NO ENTERPRISE DEPLOYMENT
+   Enterprises as defined above may not deploy, integrate, or
+   operate the Software in any production, staging, or
+   customer-facing environment without a Commercial License.
+
+7. NO SUBLICENSING
+   You may not sublicense the Software or grant rights to
+   third parties beyond what this License explicitly permits.
+
+8. NO TRADEMARK USE
+   You may not use the name "GestureNav", "GestureSliderPoC",
+   or the Licensor's name to endorse or promote products
+   derived from this Software without prior written consent.
+
+9. NO REMOVAL OF NOTICES
+   You may not remove or alter any copyright, patent, or
+   attribution notices contained in the Software.
+
+════════════════════════════════════════════════════════════
+CONTRIBUTOR TERMS
+════════════════════════════════════════════════════════════
+
+10. CONTRIBUTOR LICENSE AGREEMENT
+    By submitting a Contribution, You:
+    (a) Confirm You have the legal right to submit it;
+    (b) Grant the Licensor a perpetual, worldwide, irrevocable,
+        royalty-free license to use, reproduce, modify,
+        distribute, and sublicense Your Contribution as part
+        of the Software under any license the Licensor chooses,
+        including future commercial licenses;
+    (c) Retain copyright in Your Contribution but agree the
+        Licensor may relicense the Software commercially;
+    (d) Confirm Your Contribution does not infringe any third
+        party intellectual property rights.
+
+11. NO CONTRIBUTOR WARRANTY
+    Contributors provide Contributions "AS IS" without warranty
+    of any kind. Contributors are not liable for any damages
+    arising from use of their Contributions.
+
+════════════════════════════════════════════════════════════
+THIRD-PARTY COMPONENTS
+════════════════════════════════════════════════════════════
+
+12. The Software uses the following third-party components
+    which are governed by their own licenses:
+
+    MediaPipe Tasks Vision   — Apache License 2.0
+    CameraX                  — Apache License 2.0
+    Jetpack Compose          — Apache License 2.0
+    Kotlin                   — Apache License 2.0
+    Hilt / Dagger            — Apache License 2.0
+
+    Your use of these components is subject to their
+    respective license terms. This License does not grant
+    any rights to those components beyond what their own
+    licenses permit.
+
+════════════════════════════════════════════════════════════
+DISCLAIMER OF WARRANTIES
+════════════════════════════════════════════════════════════
+
+13. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+    KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+    WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+    PURPOSE, ACCURACY OF GESTURE RECOGNITION, OR
+    NON-INFRINGEMENT. THE LICENSOR DOES NOT WARRANT THAT THE
+    SOFTWARE WILL MEET YOUR REQUIREMENTS OR OPERATE WITHOUT
+    INTERRUPTION OR ERROR.
+
+════════════════════════════════════════════════════════════
+LIMITATION OF LIABILITY
+════════════════════════════════════════════════════════════
+
+14. IN NO EVENT SHALL THE LICENSOR OR CONTRIBUTORS BE LIABLE
+    FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+    OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    LOSS OF DATA, LOSS OF PROFITS, OR BUSINESS INTERRUPTION)
+    ARISING OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THIS
+    LICENSE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+    DAMAGES.
+
+════════════════════════════════════════════════════════════
+COMMERCIAL LICENSING
+════════════════════════════════════════════════════════════
+
+15. OBTAINING A COMMERCIAL LICENSE
+    If You are an Enterprise or wish to use the Software for
+    Commercial Use, contact the Licensor to obtain a
+    Commercial License:
+
+    Email   : rishabhmanikpuri379@gmail.com
+    LinkedIn: www.linkedin.com/in/rishabh-manikpuri
+    Subject : "GestureNav Commercial License Inquiry"
+
+    Commercial Licenses are available on terms negotiated
+    individually and may include source access, support SLAs,
+    custom gesture training, and white-label rights.
+
+════════════════════════════════════════════════════════════
+TERMINATION
+════════════════════════════════════════════════════════════
+
+16. This License and the rights granted hereunder terminate
+    automatically if You breach any term of this License.
+    Upon termination You must destroy all copies of the
+    Software in Your possession. Sections 10, 13, 14, and 17
+    survive termination.
+
+════════════════════════════════════════════════════════════
+GOVERNING LAW
+════════════════════════════════════════════════════════════
+
+17. This License shall be governed by and construed in
+    accordance with the laws of India, without regard to
+    conflict of law provisions. Any disputes shall be subject
+    to the exclusive jurisdiction of the courts located in
+    Bengaluru, Karnataka, India.
+
+════════════════════════════════════════════════════════════
+FUTURE LICENSE VERSIONS
+════════════════════════════════════════════════════════════
+
+18. The Licensor reserves the right to publish updated
+    versions of this License. You may use the Software under
+    the terms of the License version under which You received
+    it, or any later version published by the Licensor.
+
+---
+
+For the full text of third-party licenses, see /THIRD_PARTY_LICENSES.md
+For contribution guidelines, see /CONTRIBUTING.md
+For commercial inquiries, see Section 15 above.

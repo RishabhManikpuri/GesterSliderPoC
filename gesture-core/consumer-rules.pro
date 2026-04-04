@@ -1,0 +1,1 @@
+-keep public class com.gesture.slider.core.domain.** { *; }
