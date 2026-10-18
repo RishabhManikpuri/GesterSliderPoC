@@ -28,6 +28,11 @@ class SliderViewModel @Inject constructor(
                 processGesture(gestureState)
             }
         }
+        viewModelScope.launch {
+            gestureRepository.rawLandmarkStream().collect { landmarks ->
+                _uiState.update { it.copy(rawLandmarks = landmarks) }
+            }
+        }
     }
 
     private fun processGesture(state: GestureState) {
@@ -102,6 +107,24 @@ class SliderViewModel @Inject constructor(
                         clickPulse = currentState.clickPulse + 1,
                         sliderValue = updatedSliderValue,
                         gestureLabel = "\uD83E\uDD0C Click!"
+                    )
+                }
+            }
+            is GestureState.Swiping -> {
+                _uiState.update { uiState ->
+                    var newRow = uiState.gridRow
+                    var newCol = uiState.gridCol
+                    
+                    when (state.direction) {
+                        "UP" -> newRow = (newRow - 1).coerceAtLeast(0)
+                        "DOWN" -> newRow = (newRow + 1).coerceAtMost(2)
+                        "LEFT" -> newCol = (newCol - 1).coerceAtLeast(0)
+                        "RIGHT" -> newCol = (newCol + 1).coerceAtMost(2)
+                    }
+
+                    uiState.copy(
+                        gridRow = newRow,
+                        gridCol = newCol
                     )
                 }
             }

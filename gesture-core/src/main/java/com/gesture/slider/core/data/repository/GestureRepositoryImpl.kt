@@ -29,6 +29,7 @@ internal class GestureRepositoryImpl @Inject constructor(
     private val handLandmarkerHelper: HandLandmarkerHelper,
     private val landmarkMapper: LandmarkMapper,
     private val pinchDetector: PinchDetector,
+    private val swipeDetector: com.gesture.slider.core.data.detector.SwipeDetector,
     private val config: GestureNavConfig
 ) : GestureRepository {
 
@@ -69,8 +70,14 @@ internal class GestureRepositoryImpl @Inject constructor(
                 _rawLandmarkFlow.tryEmit(mappedLandmarks)
                 
                 val currentTime = System.currentTimeMillis()
-                val nextState = pinchDetector.process(mappedLandmarks, currentTime)
-                _gestureStateFlow.tryEmit(nextState)
+                
+                val swipeState = swipeDetector.process(mappedLandmarks, currentTime)
+                if (swipeState != null) {
+                    _gestureStateFlow.tryEmit(swipeState)
+                } else {
+                    val nextState = pinchDetector.process(mappedLandmarks, currentTime)
+                    _gestureStateFlow.tryEmit(nextState)
+                }
             }
         }
         

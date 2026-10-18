@@ -19,26 +19,10 @@ import com.gesture.slider.ui.SliderViewModel
 
 @Composable
 fun GestureSliderScreen(
-    viewModel: SliderViewModel
+    viewModel: SliderViewModel,
+    onNavigateToSwipe: () -> Unit = {}
 ) {
     val uiState by viewModel.uiState.collectAsState()
-    val lifecycleOwner = LocalLifecycleOwner.current
-
-    DisposableEffect(lifecycleOwner) {
-        val observer = LifecycleEventObserver { _, event ->
-            if (event == Lifecycle.Event.ON_START) {
-                viewModel.gestureRepository.start(lifecycleOwner)
-            } else if (event == Lifecycle.Event.ON_STOP) {
-                viewModel.gestureRepository.stop()
-            }
-        }
-        lifecycleOwner.lifecycle.addObserver(observer)
-        
-        onDispose {
-            lifecycleOwner.lifecycle.removeObserver(observer)
-            viewModel.gestureRepository.stop()
-        }
-    }
 
     Box(modifier = Modifier.fillMaxSize().background(Color.Black)) {
         // Layer 1: Camera
@@ -58,7 +42,8 @@ fun GestureSliderScreen(
         GestureSliderContent(
             sliderValue = uiState.sliderValue,
             isDragging = uiState.isDragging,
-            modifier = Modifier.fillMaxSize()
+            modifier = Modifier.fillMaxSize(),
+            onNavigateToSwipe = onNavigateToSwipe
         )
 
         // Layer 4: Overlay

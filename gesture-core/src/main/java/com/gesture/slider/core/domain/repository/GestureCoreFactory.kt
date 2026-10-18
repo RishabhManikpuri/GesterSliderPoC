@@ -17,6 +17,7 @@ object GestureCoreFactory {
             HandLandmarkerHelper(context, config),
             LandmarkMapper(),
             PinchDetector(config.pinchThreshold, config.dragActivationMs),
+            com.gesture.slider.core.data.detector.SwipeDetector(),
             config
         )
     }

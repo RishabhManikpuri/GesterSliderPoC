@@ -28,4 +28,8 @@ sealed class GestureState {
         val cursorX: Float,
         val cursorY: Float
     ) : GestureState()
+
+    data class Swiping(
+        val direction: String
+    ) : GestureState()
 }

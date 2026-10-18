@@ -20,7 +20,8 @@ import androidx.compose.ui.unit.sp
 fun GestureSliderContent(
     sliderValue: Float,
     isDragging: Boolean,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onNavigateToSwipe: () -> Unit = {}
 ) {
     Column(
         modifier = modifier.fillMaxWidth(),
@@ -40,7 +41,13 @@ fun GestureSliderContent(
             color = Color.White.copy(alpha = 0.8f)
         )
         
-        Spacer(modifier = Modifier.height(48.dp))
+        Spacer(modifier = Modifier.height(16.dp))
+        
+        androidx.compose.material3.Button(onClick = onNavigateToSwipe) {
+            Text("Go to Swipe Gestures")
+        }
+        
+        Spacer(modifier = Modifier.height(16.dp))
         
         GestureSliderWidget(
             value = sliderValue,
