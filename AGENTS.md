@@ -128,3 +128,4 @@ Reference these specific guidebooks for execution:
 | [Android Project Structure Skill](file:///Users/rishabhmanikpuri/.gemini/antigravity/scratch/GestureSliderPoC/docs/skill-android-structure.md) | Folder hierarchy, packaging standards, clean separation across modules |
 | [New Feature Implementation Skill](file:///Users/rishabhmanikpuri/.gemini/antigravity/scratch/GestureSliderPoC/docs/skill-new-feature.md) | Step-by-step feature workflow with post-implementation review & circuit breaker |
 | [Figma to Compose Skill](file:///Users/rishabhmanikpuri/.gemini/antigravity/scratch/GestureSliderPoC/docs/skill-figma-to-compose.md) | Translating Figma designs & Figma Code Connect specs into Jetpack Compose |
+| [Simplicity Code Review Skill](file:///Users/rishabhmanikpuri/.gemini/antigravity/scratch/GestureSliderPoC/docs/skill-simplicity-code-review.md) | Android code review based on Andrej Karpathy's 4 core principles & anti-churn circuit breaker |
